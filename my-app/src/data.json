@@ -1,0 +1,15 @@
+{
+  "users": [
+    { "name": "Иванов Иван Иванович",
+      "email": "ivanov@mail.ru"
+    },
+    { "name": "Иволгина Ирина Петровна",
+      "email": "ivolgina@mail.ru"
+    },
+    { "name": "Белова Александра Александровна",
+      "email": "belova@mail.ru"
+    }
+  ],
+  "postcards": []
+}
+

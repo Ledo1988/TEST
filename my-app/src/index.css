@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Proxima-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: local('Proxima-Regular'), url(./fonts/ProximaNova-Regular.woff2) format('woff2'),
+    url(./fonts/ProximaNova-Regular.woff) format('woff'),
+    url(./fonts/ProximaNova-Regular.ttf) format('ttf')
+}
+
+@font-face {
+    font-family: "Proxima-Regular";
+    font-style: normal;
+    font-weight: 600;
+    src: local('Proxima-Regular'), url(./fonts/ProximaNova-SemiBold.woff2) format('woff2'),
+    url(./fonts/ProximaNova-SemiBold.woff) format('woff'),
+    url(./fonts/ProximaNova-SemiBold.ttf) format('ttf')
+}
+
+@font-face {
+    font-family: "Proxima-Regular";
+    font-style: normal;
+    font-weight: 700;
+    src: local('Proxima-Regular'), url(./fonts/ProximaNova-Bold.woff2) format('woff2'),
+    url(./fonts/ProximaNova-Bold.woff) format('woff'),
+    url(./fonts/ProximaNova-Bold.ttf) format('ttf')
+}
+
+body {
+    margin: 0;
+    font-family: 'Proxima-Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.label-title {
+    font-size: 13px;
+    color: #626261;
+    margin: 5px 0px;
+}
