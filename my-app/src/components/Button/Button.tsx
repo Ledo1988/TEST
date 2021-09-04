@@ -1,12 +1,10 @@
 import React, {useContext} from "react";
 import classes from './Button.module.css';
 import Context from "../../Context";
+import {UserDataState} from "../Form";
 
 interface Props {
-    usersData?: {
-        card: string,
-        text: string
-    }
+    usersData?: UserDataState
 }
 
 export const Button: React.FC<Props> = (props) => {
@@ -14,11 +12,11 @@ export const Button: React.FC<Props> = (props) => {
     const {usersData} = props;
 
     const handleClick = () => {
-        if (state.condition === 'input') setState((prevState: any) => (
+        if (state.condition === 'input') setState(prevState => (
             {...prevState, condition: "result", postcard: usersData?.card, greetings: usersData?.text}));
     }
 
-    const btnDisabled = usersData?.card === '' || usersData?.text === ''
+    const btnDisabled = usersData?.card === '' || usersData?.text === '';
 
     return (
         <button type="button"

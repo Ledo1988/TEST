@@ -1,12 +1,10 @@
 import React, {useState} from "react";
 import classes from './TextArea.module.css'
+import {UserDataState} from "../Form";
 
 interface Props {
-    usersData: {
-        card: string,
-        text: string
-    }
-    setUsersData: (prevState: any) => void;
+    usersData: UserDataState,
+    setUsersData: (prevState: (prevState: UserDataState) =>  UserDataState ) => void;
 }
 
 export const TextArea: React.FC<Props> = (props) => {
@@ -17,7 +15,7 @@ export const TextArea: React.FC<Props> = (props) => {
     const handleChange = (value: string) => {
         if (value.length > maxAmount) return false;
         setAmount(value.length);
-        setUsersData((prevState: any) => ({...prevState, text: value}));
+        setUsersData(prevState => ({...prevState, text: value}));
     }
 
     return (

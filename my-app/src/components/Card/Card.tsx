@@ -1,14 +1,13 @@
 import React from "react";
 import classes from'./Card.module.css';
 
-
 interface Props {
     item: {
         id: number
         title: string,
         img: string
     },
-    currentCard: string,
+    currentCard?: string,
     handleChange: (title: string) => void;
 }
 

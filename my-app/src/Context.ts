@@ -1,5 +1,11 @@
 import React from "react";
 
+export interface IState {
+    condition?: string,
+    postcard?: string,
+    greetings?: string,
+}
+
 interface IContextProps {
     data: {
         user: {
@@ -8,13 +14,8 @@ interface IContextProps {
         },
         postcards: string[]
     },
-    state: {
-        condition: string,
-        postcard: string,
-        greetings: string
-    },
-    setState: (prevState: any) => void;
+    state: IState,
+    setState: (prevState: (prevState: IState) =>  IState ) => void;
 }
-
 
 export default React.createContext({} as IContextProps);

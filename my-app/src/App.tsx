@@ -17,8 +17,9 @@ interface Props {
 
 const App: React.FC<Props> = (props) => {
   const {initialData} = props;
-  const [state, setState] = useState({
-        condition:"input",
+  const [state, setState] = useState<{condition?: string, postcard?: string, greetings?: string}>
+  ({
+        condition: "input",
         postcard: '',
         greetings: ''
   });

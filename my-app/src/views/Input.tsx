@@ -3,10 +3,11 @@ import {Form} from "../components/Form";
 import {Button} from "../components/Button/Button";
 
 const Input: React.FC = () => {
-    const [usersData, setUsersData] = useState({
-        card: '',
-        text: ''
-    });
+    const [usersData, setUsersData] = useState<{card?: string, text?: string}>
+        ({
+            card: "input",
+            text: ''
+        });
 
     return (
       <section>

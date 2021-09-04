@@ -5,14 +5,13 @@ import postcardsArr from "../../images/img_postcards";
 import {Card} from "../Card/Card";
 import classes from'./CardsSlider.module.css';
 import Context from "../../Context";
+import {UserDataState} from "../Form";
 
 interface Props {
-    usersData: {
-        card: string,
-        text: string
-    }
-    setUsersData: (prevState: any) => void;
+    usersData: UserDataState,
+    setUsersData: (prevState: (prevState: UserDataState) =>  UserDataState ) => void;
 }
+
 export const CardsSlider: React.FC<Props> = (props) => {
     const {usersData, setUsersData} = props;
     const {data} = useContext(Context);
@@ -20,7 +19,7 @@ export const CardsSlider: React.FC<Props> = (props) => {
         return postcardsArr.filter(elem => data.postcards.find(el => el === elem.title));
     }
     const handleChange = (value: string) => {
-        setUsersData((prevState: any) => ({...prevState, card: value}));
+        setUsersData(prevState => ({...prevState, card: value}));
     }
 
     return (
