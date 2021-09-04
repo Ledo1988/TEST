@@ -1,15 +1,8 @@
 {
-  "users": [
-    { "name": "Иванов Иван Иванович",
-      "email": "ivanov@mail.ru"
-    },
-    { "name": "Иволгина Ирина Петровна",
-      "email": "ivolgina@mail.ru"
-    },
-    { "name": "Белова Александра Александровна",
+  "user": {
+      "name": "Белова Александра Александровна",
       "email": "belova@mail.ru"
-    }
-  ],
-  "postcards": []
+  },
+  "postcards": ["postcard_2", "postcard_3", "postcard_4", "postcard_5", "postcard_6", "postcard_7", "postcard_8"]
 }
 

@@ -1,10 +1,19 @@
 import React from "react";
-import {Input} from "./Input/Input";
+import {TextField} from "./TextField/TextField";
+import {CardsSlider} from "./CardsSlider/CardsSlider";
 
-export const Form: React.FC = () => {
+interface Props {
+    userName: string,
+    postcards: string[]
+}
+
+export const Form: React.FC<Props> = (props) => {
+    const {userName, postcards} = props;
+
     return (
         <div className="form">
-            <Input/>
+            <TextField userName={userName}/>
+            <CardsSlider postcards={postcards}/>
         </div>
     );
 };

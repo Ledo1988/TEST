@@ -1,0 +1,13 @@
+.button {
+    padding: 10px 20px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: inherit;
+    outline: none;
+    border: none;
+    background: linear-gradient(86.24deg, #0070C8 3.76%, #004C97 98.88%);
+    border-radius: 4px;
+}
