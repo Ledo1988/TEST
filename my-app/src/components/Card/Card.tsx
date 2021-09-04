@@ -8,19 +8,19 @@ interface Props {
         title: string,
         img: string
     },
-    chosen: string,
-    setChosen: (title: string) => void;
+    currentCard: string,
+    handleChange: (title: string) => void;
 }
 
 export const Card: React.FC<Props> = (props) => {
-    const {item, chosen, setChosen} = props;
+    const {item, currentCard, handleChange} = props;
 
     return (
-       <label className={chosen === item.title ? `${classes.card} ${classes.cardChecked}`: classes.card}>
+       <label className={currentCard === item.title ? `${classes.card} ${classes.cardChecked}`: classes.card}>
            <input type="radio"
                   className={classes.cardInput}
-                  checked={chosen === item.title}
-                  onChange={() => setChosen(item.title)}
+                  checked={currentCard === item.title}
+                  onChange={() => handleChange(item.title)}
                   name="radio"/>
            <span className={classes.cardCheckmark}>
                <svg width="26" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
