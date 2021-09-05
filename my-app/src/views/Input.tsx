@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import {Form} from "../components/Form";
+import {Form} from "../components/Form/Form";
 import {Button} from "../components/Button/Button";
 
 const Input: React.FC = () => {
     const [usersData, setUsersData] = useState<{card?: string, text?: string}>
         ({
-            card: "input",
+            card: '',
             text: ''
         });
 

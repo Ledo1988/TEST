@@ -1,7 +1,8 @@
 import React from "react";
-import {TextField} from "./TextField/TextField";
-import {CardsSlider} from "./CardsSlider/CardsSlider";
-import {TextArea} from "./TextArea/TextArea";
+import {TextField} from "../TextField/TextField";
+import {CardsSlider} from "../CardsSlider/CardsSlider";
+import {TextArea} from "../TextArea/TextArea";
+import classes from './Form.module.css'
 
 export interface UserDataState {
     card?: string,
@@ -17,7 +18,7 @@ export const Form: React.FC<Props> = (props) => {
     const {usersData, setUsersData} = props;
 
     return (
-        <div className="form">
+        <div className={classes.form}>
             <TextField/>
             <CardsSlider usersData={usersData}
                          setUsersData={setUsersData}/>

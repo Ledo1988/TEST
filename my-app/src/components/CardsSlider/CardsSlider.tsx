@@ -5,7 +5,7 @@ import postcardsArr from "../../images/img_postcards";
 import {Card} from "../Card/Card";
 import classes from'./CardsSlider.module.css';
 import Context from "../../Context";
-import {UserDataState} from "../Form";
+import {UserDataState} from "../Form/Form";
 
 interface Props {
     usersData: UserDataState,
@@ -30,12 +30,12 @@ export const CardsSlider: React.FC<Props> = (props) => {
                     loop={true}
                     breakpoints={{
                         320: {
-                            slidesPerView: 2,
-                            spaceBetween: 20
+                            slidesPerView: 1,
+                            spaceBetween: 10
                         },
                         480: {
-                            slidesPerView: 3,
-                            spaceBetween: 30
+                            slidesPerView: 2,
+                            spaceBetween: 20
                         },
                         640: {
                             slidesPerView: 4

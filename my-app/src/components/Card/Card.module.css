@@ -22,13 +22,13 @@
     transition: .1s ease-in-out;
 }
 
-.card img {
+.img {
     width: auto;
     height: auto;
     max-width: 100%;
 }
 
-.cardInput {
+.input {
     position: absolute;
     width: 0;
     height: 0;
@@ -37,7 +37,7 @@
     cursor: pointer;
 }
 
-.cardCheckmark {
+.checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -55,20 +55,20 @@
     z-index: -1;
 }
 
-.cardInput:checked ~ .cardCheckmark,
-.cardChecked .cardCheckmark {
+.input:checked ~ .checkmark,
+.cardChecked .checkmark {
     opacity: 1;
     z-index: 1;
 }
 
 .card:hover .imgWrapper,
-.cardInput:checked ~ .imgWrapper,
+.input:checked ~ .imgWrapper,
 .cardChecked .imgWrapper {
     border: 2px solid #0070C8;
 }
 
 .card:hover .imgWrapper::before,
-.cardInput:checked ~ .imgWrapper::before,
+.input:checked ~ .imgWrapper::before,
 .cardChecked .imgWrapper::before {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 }

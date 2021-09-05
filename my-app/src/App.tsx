@@ -8,8 +8,8 @@ import Result from "./views/Result";
 interface Props {
     initialData: {
         user: {
-                name: string,
-                email: string
+            name: string,
+            email: string
         },
         postcards: string[]
     }
@@ -23,7 +23,7 @@ const App: React.FC<Props> = (props) => {
         postcard: '',
         greetings: ''
   });
-console.log(state)
+
   return (
       <div className={classes.appWrapper}>
         <div className={classes.app}>

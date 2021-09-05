@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import classes from './TextArea.module.css'
-import {UserDataState} from "../Form";
+import {UserDataState} from "../Form/Form";
 
 interface Props {
     usersData: UserDataState,

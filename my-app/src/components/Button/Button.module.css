@@ -1,3 +1,14 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        display: block;
+    }
+}
+
 .button {
     display: block;
     padding: 10px 20px;
@@ -20,4 +31,18 @@
 .buttonDisabled {
     opacity: 0.5;
     pointer-events: none;
+}
+
+.comment {
+    display: block;
+    margin-left: 20px;
+    font-size: 13px;
+    line-height: 140%;
+    color: #626261;
+}
+
+@media (max-width: 767px) {
+    .comment {
+        margin: 10px 0 0 0;
+    }
 }
