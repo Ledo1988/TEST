@@ -28,6 +28,10 @@
     transition: .2s ease-in-out;
 }
 
+.button:hover {
+    background: linear-gradient(86.24deg, #004C97 3.76%, #004C97 98.88%);
+}
+
 .buttonDisabled {
     opacity: 0.5;
     pointer-events: none;
